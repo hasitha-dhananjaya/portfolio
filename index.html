@@ -3,42 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backend Developer Portfolio</title>
+    <title>Backend Developer & DevOps Engineer Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
             <h1>John Doe</h1>
-            <p class="tagline">Backend Developer | Java Spring Boot | NestJS | ASP.NET</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <p class="tagline">Backend Developer | DevOps Engineer | Java Spring Boot | Docker | Jenkins</p>
+            <a href="#projects" class="btn">View My Work <i class="fas fa-arrow-right"></i></a>
         </div>
     </header>
 
     <!-- About Me -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a backend developer with expertise in building scalable and efficient systems using Java Spring Boot, NestJS, and ASP.NET. I specialize in RESTful APIs, microservices, and database management with ORMs like Prisma, Hibernate, and EF Core. I'm also experienced in CI/CD pipelines with Jenkins and containerization using Docker.</p>
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>I'm a passionate backend developer and DevOps engineer with expertise in building scalable systems and automating deployment pipelines. I specialize in Java Spring Boot, NestJS, and ASP.NET for backend development, and I'm proficient in DevOps tools like Docker, Jenkins, and CI/CD pipelines. My goal is to bridge the gap between development and operations to deliver efficient and reliable systems.</p>
         </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
         <div class="container">
-            <h2>Skills</h2>
+            <h2><i class="fas fa-tools"></i> Skills</h2>
             <div class="skills-grid">
-                <div class="skill">Java Spring Boot</div>
-                <div class="skill">NestJS</div>
-                <div class="skill">ASP.NET</div>
-                <div class="skill">Prisma</div>
-                <div class="skill">Hibernate</div>
-                <div class="skill">Entity Framework Core</div>
-                <div class="skill">Jenkins</div>
-                <div class="skill">Docker</div>
-                <div class="skill">Git</div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skills-list">
+                        <div class="skill"><i class="fab fa-java"></i> Java Spring Boot</div>
+                        <div class="skill"><i class="fab fa-node-js"></i> NestJS</div>
+                        <div class="skill"><i class="fab fa-microsoft"></i> ASP.NET</div>
+                        <div class="skill"><i class="fas fa-code"></i> RESTful APIs</div>
+                        <div class="skill"><i class="fas fa-database"></i> Prisma</div>
+                        <div class="skill"><i class="fas fa-database"></i> Hibernate</div>
+                        <div class="skill"><i class="fas fa-database"></i> Entity Framework Core</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps</h3>
+                    <div class="skills-list">
+                        <div class="skill"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="skill"><i class="fab fa-jenkins"></i> Jenkins</div>
+                        <div class="skill"><i class="fas fa-cogs"></i> CI/CD Pipelines</div>
+                        <div class="skill"><i class="fab fa-kubernetes"></i> Kubernetes</div>
+                        <div class="skill"><i class="fas fa-cloud"></i> Terraform</div>
+                        <div class="skill"><i class="fab fa-aws"></i> AWS/GCP</div>
+                        <div class="skill"><i class="fab fa-git-alt"></i> Git & GitHub Actions</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -46,16 +63,21 @@
     <!-- Projects -->
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
             <div class="project">
-                <h3>E-commerce Backend</h3>
-                <p>Built a scalable e-commerce backend using Java Spring Boot and Hibernate. Integrated with Docker for containerization and Jenkins for CI/CD.</p>
-                <a href="https://github.com/yourusername/ecommerce-backend" class="btn">View Code</a>
+                <h3><i class="fas fa-shopping-cart"></i> E-commerce Backend with CI/CD</h3>
+                <p>Built a scalable e-commerce backend using Java Spring Boot and Hibernate. Implemented CI/CD pipelines using Jenkins and Docker for containerization.</p>
+                <a href="https://github.com/yourusername/ecommerce-backend" class="btn">View Code <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="project">
-                <h3>RESTful API with NestJS</h3>
-                <p>Developed a RESTful API for a task management system using NestJS and Prisma for database management.</p>
-                <a href="https://github.com/yourusername/nestjs-api" class="btn">View Code</a>
+                <h3><i class="fas fa-network-wired"></i> Microservices with NestJS and Kubernetes</h3>
+                <p>Developed a microservices-based application using NestJS and deployed it on Kubernetes. Automated deployments using GitHub Actions.</p>
+                <a href="https://github.com/yourusername/nestjs-kubernetes" class="btn">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project">
+                <h3><i class="fas fa-code-branch"></i> Infrastructure as Code with Terraform</h3>
+                <p>Created reusable Terraform modules to provision cloud infrastructure on AWS for a scalable web application.</p>
+                <a href="https://github.com/yourusername/terraform-aws" class="btn">View Code <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -63,11 +85,13 @@
     <!-- Contact -->
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
             <p>Let's connect! Feel free to reach out for collaborations or opportunities.</p>
-            <a href="mailto:john.doe@example.com" class="btn">Email Me</a>
-            <a href="https://github.com/yourusername" class="btn">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" class="btn">LinkedIn</a>
+            <div class="contact-links">
+                <a href="mailto:john.doe@example.com" class="btn"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://github.com/yourusername" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
     </section>
 

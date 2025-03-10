@@ -52,6 +52,9 @@ a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .hero .btn:hover {
@@ -67,14 +70,33 @@ a:hover {
     font-size: 2rem;
     margin-bottom: 20px;
     border-bottom: 2px solid #00bcd4;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Skills Grid */
 .skills-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 280px;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+.skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 10px;
 }
 
 .skill {
@@ -83,6 +105,14 @@ a:hover {
     text-align: center;
     border-radius: 5px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skill i {
+    font-size: 1.2rem;
 }
 
 /* Projects */
@@ -95,6 +125,10 @@ a:hover {
 
 .project h3 {
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00bcd4;
 }
 
 .project .btn {
@@ -103,9 +137,34 @@ a:hover {
     padding: 8px 16px;
     border-radius: 5px;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .project .btn:hover {
+    background: #0097a7;
+}
+
+/* Contact */
+.contact-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-links .btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-links .btn:hover {
     background: #0097a7;
 }
 
